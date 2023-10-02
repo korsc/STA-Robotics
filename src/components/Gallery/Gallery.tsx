@@ -3,13 +3,13 @@ import Image1 from './STARoboticsPhotos/stagallery1.webp';
 import Image2 from './STARoboticsPhotos/stagallery2.webp';
 import Image3 from './STARoboticsPhotos/stagallery3.webp';
 import Image4 from './STARoboticsPhotos/stagallery4.webp';
-import Image5 from './STARoboticsPhotos/stagallery5.webp';
+// import Image5 from './STARoboticsPhotos/stagallery5.webp';
 import './gallery.css';
 
 const Gallery: React.FC = () => {
-  const modalRef = useRef<HTMLElement | null>(null);
-  const modalImgRef = useRef<HTMLImageElement | null>(null);
-  const captionTextRef = useRef<HTMLDivElement | null>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+  const modalImgRef = useRef<HTMLImageElement>(null);
+  const captionTextRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const modal = modalRef.current!;
@@ -22,15 +22,18 @@ const Gallery: React.FC = () => {
       const img = images[i] as HTMLImageElement;
       img.onclick = function () {
         modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
+        modalImg.src = img.src;
+        captionText.innerHTML = img.alt;
       };
     }
+    const span = document.getElementsByClassName("close")[0] as HTMLDivElement;
 
-    const span = document.getElementsByClassName("close")[0];
-    span.onclick = function () {
-      modal.style.display = "none";
-    };
+    if (span) {
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+    }
+    
   }, []);
 
   return (

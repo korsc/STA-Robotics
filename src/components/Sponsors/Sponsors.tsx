@@ -4,8 +4,6 @@ import React from 'react';
 import leoImg from '../../assets/images/leospizza.jpeg';
 import MoneyGive from '../../assets/images/STA_sponsorimage1.svg'
 import SponsorIdea from '../../assets/images/STA_sponsorimage2.svg'
-import BestBuyLogo from '../../assets/images/bestbuylogo.png'; {/* wanted to just test out a rectangular logo*/}
-import HarambeImg from '../../assets/images/harambesponsor.jfif'
 
 const Sponsors: React.FC = () => {
   const TierASponsors = [
@@ -13,20 +11,20 @@ const Sponsors: React.FC = () => {
     // Add more TierA sponsors as needed
   ];
 
-  const TierBSponsors = [
-    { logo: leoImg, link: 'https://www.leospizzangrill.com/' },
-    // Define TierB sponsors with imported images and links
-  ];
+  // const TierBSponsors = [
+  //   { logo: leoImg, link: 'https://www.leospizzangrill.com/' },
+  //   // Define TierB sponsors with imported images and links
+  // ];
 
-  const TierCSponsors = [
-    { logo: leoImg, link: 'https://www.leospizzangrill.com/' },
-    // Define TierC sponsors with imported images and links
-  ];
+  // const TierCSponsors = [
+  //   { logo: leoImg, link: 'https://www.leospizzangrill.com/' },
+  //   // Define TierC sponsors with imported images and links
+  // ];
 
-  const TierDSponsors = [
-    { logo: leoImg, link: 'https://www.leospizzangrill.com/' },
-    // Define TierD sponsors with imported images and links
-  ];
+  // const TierDSponsors = [
+  //   { logo: leoImg, link: 'https://www.leospizzangrill.com/' },
+  //   // Define TierD sponsors with imported images and links
+  // ];
 
   const openSponsorLink = (link: string) => {
     window.open(link, '_blank');
