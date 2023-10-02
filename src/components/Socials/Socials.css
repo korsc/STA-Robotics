@@ -1,0 +1,17 @@
+@media(min-width:768px){
+.socials a,
+.socials p {
+    font-size: 1.4vw;
+    transition: 0.3s;
+}   
+    }
+
+.socials a:hover {
+    color: #ef4444;
+}
+
+@media (max-width: 768px){
+    .socials p{
+        font-size: 6vw;
+    }
+}
