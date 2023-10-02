@@ -32,7 +32,7 @@ const About: React.FC = () => {
         </div>
 
         <div className=''>
-          <img src={Vexlogo} alt='Vex Robotics Logo' style={{ width: '100%', height: 'auto' }} className='md:mr-96 mobile:flex mobile:justify-center'/>
+          <img src={Vexlogo} alt='Vex Robotics Logo' className='md:mr-96 mobile:flex mobile:justify-center mobile:mx-auto md:h-96 mobile:w-80 '/>
         </div>
       </section>
     </div>

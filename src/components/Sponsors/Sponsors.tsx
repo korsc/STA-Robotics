@@ -5,6 +5,7 @@ import leoImg from '../../assets/images/leospizza.jpeg';
 import MoneyGive from '../../assets/images/STA_sponsorimage1.svg'
 import SponsorIdea from '../../assets/images/STA_sponsorimage2.svg'
 
+
 const Sponsors: React.FC = () => {
   const TierASponsors = [
     { logo: leoImg, link: 'https://www.leospizzangrill.com/' },
@@ -43,7 +44,7 @@ const Sponsors: React.FC = () => {
     </p>
   </div>
   <span>
-    <img src={MoneyGive} className='md:relative md:mt-[-6%] mobile:mb-[12%] md:h-64 rounded-full border-red-700 border mobile:flex mobile:justify-center md:ml-[12%] mobile:mt-7' alt="Sponsor Idea" />
+    <img src={MoneyGive} className='md:relative md:mt-[-6%] mobile:mb-[12%] md:h-64 rounded-full border-red-700 border mobile:flex mobile:justify-center md:ml-[12%] mobile:mt-7 mx-auto mobile:w-80' alt="Sponsor Idea" />
   </span>
 </div>
 
@@ -61,7 +62,7 @@ const Sponsors: React.FC = () => {
 <br></br>
     Transportation of our robots, tools, extra parts, and team members to each competition can be challenging. In the future, we aspire to have a trailer for all out-of-town competitions. As mentioned on our 'about' page, one of our annual goals is to qualify for the World Championships. Achieving this comes with a significant financial component to cover travel expenses for all team members.
     </p>
-    <img src={SponsorIdea} className='md:hidden mobile:my-[7%] rounded-full border-red-700 border mobile:flex mobile:justify-center mobile:mt-7' alt="Sponsor Idea" />
+    <img src={SponsorIdea} className='md:hidden mobile:my-[7%] rounded-full border-red-700 border mobile:flex mobile:justify-center mobile:mt-7 mx-auto mobile:w-80' alt="Sponsor Idea" />
   </div>
 </div>
 

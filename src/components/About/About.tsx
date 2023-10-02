@@ -19,7 +19,7 @@ const About: React.FC=()=>{
     At STA we currently have  4 competitive teams spanning grades 10 to 12. Our students come to us primarily from our Computer Programming classes (ICD2O, ICS3U, ICS4U) and Computer Engineering (TEJ3M, TEJ4M) classes and have a passion for designing, building and programming. As members of the London District Catholic School Board, our students get to compete in the newly formed LDCSB Robotics league as well as the VEX VRC Competitive league in Ontario where we compete as Team 30405. 
     </p>
 
-    <img src={TechScene} className='md:hidden rounded-full border-red-700 border mobile:flex mobile:justify-center mobile:mb-[15%] mobile:mt-[4%]' alt="Sponsor Idea" />
+    <img src={TechScene} className='md:hidden rounded-full border-red-700 border mobile:flex mobile:justify-center mobile:mb-[15%] mobile:mt-[4%] mx-auto mobile:w-80' alt="Sponsor Idea" />
 
   </div>
 </div>
@@ -40,7 +40,7 @@ Our dreams do not end there however. Once at provincials teams have the opportun
     </p>
   </div>
   <span>
-    <img src={Trophy} className='md:relative md:mt-[8%] md:h-64 rounded-full border-red-700 border mobile:flex mobile:justify-center md:ml-[20%] mobile:mt-7' alt="Sponsor Idea" />
+    <img src={Trophy} className='md:relative md:mt-[8%] md:h-64 rounded-full border-red-700 border mobile:flex mobile:justify-center md:ml-[20%] mobile:mt-7 mx-auto mobile:w-80' alt="Sponsor Idea" />
   </span>
 </div>
 
