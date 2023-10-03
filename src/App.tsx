@@ -7,7 +7,7 @@ import Teams from './components/Teams/Teams.tsx'
 import Gallery from './components/Gallery/Gallery.tsx';
 import Sponsors from './components/Sponsors/Sponsors.tsx';
 import Contact from './components/Contact/Contact.tsx';
-import CircuitAnimation from './components/CircuitAnimation/CircuitAnimation';
+// import CircuitAnimation from './components/CircuitAnimation/CircuitAnimation';
 import Footer from './components/Footer/Footer.tsx';
 // import './index.css';
 
@@ -16,7 +16,7 @@ const App = () => {
     <>
       <Navbar />
       <div className=''>
-      <CircuitAnimation />
+      {/* <CircuitAnimation /> */}
         </div>
         <Home />
         
