@@ -18,6 +18,9 @@ const Navbar: React.FC = () => {
     closeMenu();
   };
 
+  
+  console.log(`Classes: ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`);
+
   return (
     <nav className={`p-6 sticky z-10 top-0 backdrop-filter backdrop-blur-lg bg-opacity-20 firefox:bg-opacity-20`}>
       <div>
@@ -97,9 +100,12 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
+      
+
       {/* Mobile Navigation Menu */}
-      {isOpen && (
-        <div className='p-6 backdrop-filter backdrop-blur-lg h-screen'>
+      
+        <div onClick={() => setIsOpen(!isOpen)}
+        className={`transition-opacity bg-white fixed top-0 left-0 place-items-center h-[100dvh] w-screen grid ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
           <ul className='text-center mt-[20%]'>
           <h3 className='font-Khula text-4xl text-red-500 font-bold flex justify-center'>Navigation</h3>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
@@ -134,7 +140,7 @@ const Navbar: React.FC = () => {
             </li>
           </ul>
         </div>
-      )}
+      
     </nav>
   );
 };
