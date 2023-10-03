@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
       {/* Mobile Navigation Menu */}
       
         <div onClick={() => setIsOpen(!isOpen)} className={`left-0 transition-opacity top-0 bg-white fixed place-items-center h-[100vh] w-screen`} style={{opacity: (isOpen ? "100" : "0"), pointerEvents: (isOpen ? "auto" : "none")}}>
-          <ul className='text-center mt-[20%]'>
+          <ul className='text-center mt-[40%]'>
           <h3 className='font-Khula text-4xl text-red-500 font-bold flex justify-center'>Navigation</h3>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
               <Link to='vex' onClick={handleLinkClick} smooth={true} duration={500} offset={-100}>
