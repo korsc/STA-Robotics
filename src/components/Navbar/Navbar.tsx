@@ -104,8 +104,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation Menu */}
       
-        <div onClick={() => setIsOpen(!isOpen)}
-        className={`transition-opacity bg-white fixed top-0 left-0 place-items-center h-[100dvh] w-screen grid ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}>
+        <div onClick={() => setIsOpen(!isOpen)} className={`mt-[-25%] transition-opacity bg-white fixed top-0 left-0 place-items-center h-[100dvh] w-screen grid`} style={{opacity: (isOpen ? "100" : "0"), pointerEvents: (isOpen ? "auto" : "none")}}>
           <ul className='text-center mt-[20%]'>
           <h3 className='font-Khula text-4xl text-red-500 font-bold flex justify-center'>Navigation</h3>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
@@ -124,17 +123,17 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='gallery' onClick={handleLinkClick} smooth={true} duration={500} offset={-50}>
+              <Link to='gallery' onClick={handleLinkClick} smooth={true} duration={500} offset={-70}>
                 Gallery
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='sponsors' onClick={handleLinkClick} smooth={true} duration={500} offset={-50}>
+              <Link to='sponsors' onClick={handleLinkClick} smooth={true} duration={500} offset={-60}>
                 Sponsors
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='contact' onClick={handleLinkClick} smooth={true} duration={500} offset={-900}>
+              <Link to='contact' onClick={handleLinkClick} smooth={true} duration={500} offset={-50}>
                 Contact
               </Link>
             </li>
