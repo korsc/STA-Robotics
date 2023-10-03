@@ -45,7 +45,6 @@ const Gallery: React.FC = () => {
         <img
           className="myImages mobile:mb-3 rounded-2xl"
           src={Image1} // Replace with your image source
-          alt="Image 1"
           style={{position:'relative'}}
         />
       </div>
@@ -55,7 +54,6 @@ const Gallery: React.FC = () => {
       <img
           className="myImages mobile:mb-3 rounded-2xl"
           src={Image2} // Replace with your image source
-          alt="Image 2"
           style={{position:'relative'}}
         />
       </div>
@@ -65,7 +63,6 @@ const Gallery: React.FC = () => {
       <img
           className="myImages mobile:mb-3 rounded-2xl"
           src={Image3} // Replace with your image source
-          alt="Image 3"
           style={{position:'relative'}}
         />
       </div>
@@ -75,14 +72,13 @@ const Gallery: React.FC = () => {
       <img
           className="myImages mobile:mb-3 rounded-2xl"
           src={Image4} // Replace with your image source
-          alt="Image 4"
           style={{position:'relative'}}
         />
       </div>
 
       <div ref={modalRef} className="modal">
         <span className="mt-20 close">&times;</span>
-        <img ref={modalImgRef} className="modal-content" id="img01" />
+        <img ref={modalImgRef} className="modal-content rounded-3xl" id="img01" />
         <div ref={captionTextRef} id="caption"></div>
       </div>
     </div>

@@ -229,14 +229,14 @@
       }
       
       .image__title {
-        font-size: 140%;
+        font-size: 100%;
         margin-bottom: 7%;
         font-weight: bold;
         font-family: Khula;
       }
       
       .image__description {
-        font-size: 1.25em;
+        font-size: 0.8em;
         margin-top: 0.25em;
         margin-right: 15%;
         margin-left: 15%;
