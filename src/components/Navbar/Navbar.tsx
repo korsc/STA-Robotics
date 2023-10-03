@@ -108,27 +108,27 @@ const Navbar: React.FC = () => {
           <ul className='text-center mt-[40%]'>
           <h3 className='font-Khula text-4xl text-red-500 font-bold flex justify-center'>Navigation</h3>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='vex' onClick={handleLinkClick} smooth={true} duration={500} offset={-100}>
+              <Link to='vex' onClick={handleLinkClick} smooth={true} duration={300} offset={-100}>
                 Vex
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='about' onClick={handleLinkClick} smooth={true} duration={500} offset={-100}>
+              <Link to='about' onClick={handleLinkClick} smooth={true} duration={300} offset={-100}>
                 About
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='teams' onClick={handleLinkClick} smooth={true} duration={500} offset={-120}>
+              <Link to='teams' onClick={handleLinkClick} smooth={true} duration={300} offset={-120}>
                 Teams
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='gallery' onClick={handleLinkClick} smooth={true} duration={500} offset={-70}>
+              <Link to='gallery' onClick={handleLinkClick} smooth={true} duration={300} offset={-70}>
                 Gallery
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='sponsors' onClick={handleLinkClick} smooth={true} duration={500} offset={-60}>
+              <Link to='sponsors' onClick={handleLinkClick} smooth={true} duration={300} offset={-60}>
                 Sponsors
               </Link>
             </li>
