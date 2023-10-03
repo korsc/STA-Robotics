@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import STALogo from '../../assets/images/STARoboticsLogo.png';
 import { Twirl as Hamburger } from 'hamburger-react';
-import './Navbar.css'
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +19,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className={`bg-white p-6 sticky z-10 top-0 backdrop-filter backdrop-blur-lg bg-opacity-20 firefox:bg-opacity-20`}>
+    <nav className={`p-6 sticky z-10 top-0 backdrop-filter backdrop-blur-lg bg-opacity-20 firefox:bg-opacity-20`}>
       <div>
         {/* Logo and Team Name */}
         <ul>
@@ -104,27 +103,27 @@ const Navbar: React.FC = () => {
           <ul className='text-center mt-[20%]'>
           <h3 className='font-Khula text-4xl text-red-500 font-bold flex justify-center'>Navigation</h3>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='vex' onClick={handleLinkClick} smooth={true} duration={500} offset={-950}>
+              <Link to='vex' onClick={handleLinkClick} smooth={true} duration={500} offset={-100}>
                 Vex
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='about' onClick={handleLinkClick} smooth={true} duration={500} offset={-950}>
+              <Link to='about' onClick={handleLinkClick} smooth={true} duration={500} offset={-100}>
                 About
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='teams' onClick={handleLinkClick} smooth={true} duration={500} offset={-950}>
+              <Link to='teams' onClick={handleLinkClick} smooth={true} duration={500} offset={-120}>
                 Teams
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='gallery' onClick={handleLinkClick} smooth={true} duration={500} offset={-920}>
+              <Link to='gallery' onClick={handleLinkClick} smooth={true} duration={500} offset={-50}>
                 Gallery
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='sponsors' onClick={handleLinkClick} smooth={true} duration={500} offset={-930}>
+              <Link to='sponsors' onClick={handleLinkClick} smooth={true} duration={500} offset={-50}>
                 Sponsors
               </Link>
             </li>

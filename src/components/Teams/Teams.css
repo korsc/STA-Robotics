@@ -92,6 +92,7 @@
   .teams {
     justify-content: center; 
     text-align: center;
+    margin: 0, auto;
   }
   
   
@@ -101,7 +102,7 @@
 
 .image {
     position: relative;
-    width: 320px
+    width: 100%;
   }
   
   
