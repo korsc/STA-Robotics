@@ -18,7 +18,7 @@ const App = () => {
       <Navbar />
       
       <LazyLoadComponent>
-      <CircuitAnimation />
+      {/* <CircuitAnimation /> */}
       </LazyLoadComponent>
         <Home />
         
