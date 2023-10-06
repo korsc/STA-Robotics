@@ -32,7 +32,7 @@ const Sponsors: React.FC = () => {
   };
 
   return (
-    <section id="sponsors">
+    <section id="sponsors" className='pb-8'>
       <div className='page-wrapper relative bg-opacity-80'>
       <div className='md:flex md:w-[90%] justify-center'>
   <div className='md:w-[70%] md:h-[100%]'>

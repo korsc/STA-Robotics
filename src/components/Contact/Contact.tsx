@@ -30,7 +30,10 @@ const Contact: React.FC=()=>{
   <div className="contact-form-wrapper">
     
     <h2 className='flex justify-center relative contact-title mobile:text-sm'>Contact Form</h2>
-    <form>
+    <form
+    action='https://formsubmit.co/660f824fe0416221fb041e95cdce3ba4'
+    method='POST'>
+
       <div className="form-item p-2">
         <input type="text" name="sender" required />
         <label>Name:</label>

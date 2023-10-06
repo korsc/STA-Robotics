@@ -7,9 +7,9 @@ import Teams from './components/Teams/Teams.tsx'
 import Gallery from './components/Gallery/Gallery.tsx';
 import Sponsors from './components/Sponsors/Sponsors.tsx';
 import Contact from './components/Contact/Contact.tsx';
-// import CircuitAnimation from './components/CircuitAnimation/CircuitAnimation';
+import CircuitAnimation from './components/CircuitAnimation/CircuitAnimation';
 import Footer from './components/Footer/Footer.tsx';
-import { LazyLoadComponent } from 'react-lazy-load-image-component';
+
 // import './index.css';
 
 const App = () => {
@@ -17,9 +17,9 @@ const App = () => {
     <>
       <Navbar />
       
-      <LazyLoadComponent>
-      {/* <CircuitAnimation /> */}
-      </LazyLoadComponent>
+      
+      <CircuitAnimation />
+      
         <Home />
         
 
@@ -30,15 +30,12 @@ const App = () => {
         <About/>
       </div>
       <div className="page-wrapper">
-      {/* <CircuitAnimation /> */}
         <Teams />
       </div>
       <div className="box-shadow-wrapper">
-      {/* <CircuitAnimation /> */}
         <Gallery />
       </div>
       <div className="box-shadow-wrapper">
-      {/* <CircuitAnimation /> */}
         <Sponsors />
       </div>
       

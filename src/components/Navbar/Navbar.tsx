@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import STALogo from '../../assets/images/STARoboticsLogo.png';
 import { Twirl as Hamburger } from 'hamburger-react';
+import Socials from '../Socials/Socials';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -104,39 +105,42 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Navigation Menu */}
       
-        <div onClick={() => setIsOpen(!isOpen)} className={`left-0 transition-opacity top-0 bg-white fixed place-items-center h-[100vh] w-screen`} style={{opacity: (isOpen ? "100" : "0"), pointerEvents: (isOpen ? "auto" : "none")}}>
+        <div onClick={() => setIsOpen(!isOpen)} className={`mobile:left-0 transition-opacity mobile:top-0 bg-white fixed place-items-center h-[100vh] mobile:w-screen`} style={{opacity: (isOpen ? "100" : "0"), pointerEvents: (isOpen ? "auto" : "none")}}>
           <ul className='text-center mt-[40%]'>
           <h3 className='font-Khula text-4xl text-red-500 font-bold flex justify-center'>Navigation</h3>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='vex' onClick={handleLinkClick} smooth={true} duration={300} offset={-100}>
+              <Link to='vex' onClick={handleLinkClick} smooth={true} duration={400} offset={-100}>
                 Vex
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='about' onClick={handleLinkClick} smooth={true} duration={300} offset={-100}>
+              <Link to='about' onClick={handleLinkClick} smooth={true} duration={400} offset={-100}>
                 About
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='teams' onClick={handleLinkClick} smooth={true} duration={300} offset={-120}>
+              <Link to='teams' onClick={handleLinkClick} smooth={true} duration={400} offset={-120}>
                 Teams
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='gallery' onClick={handleLinkClick} smooth={true} duration={300} offset={-70}>
+              <Link to='gallery' onClick={handleLinkClick} smooth={true} duration={400} offset={-70}>
                 Gallery
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='sponsors' onClick={handleLinkClick} smooth={true} duration={300} offset={-60}>
+              <Link to='sponsors' onClick={handleLinkClick} smooth={true} duration={400} offset={-60}>
                 Sponsors
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='contact' onClick={handleLinkClick} smooth={true} duration={500} offset={-50}>
+              <Link to='contact' onClick={handleLinkClick} smooth={true} duration={400} offset={-50}>
                 Contact
               </Link>
             </li>
+            <div className='text-red-500 mobile:flex mobile:justify-center mobile:ml-5 mobile:mt-7'>
+            <Socials/>
+            </div>
           </ul>
         </div>
       
