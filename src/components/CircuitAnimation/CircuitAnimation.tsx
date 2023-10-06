@@ -3,6 +3,8 @@ import "./CircuitAnimations.css"
 const CircuitAnimation=()=>{
 return (
 
+
+<div>
 <svg id="svg1"
   width='100%'
   height="100%"
@@ -2282,6 +2284,7 @@ return (
     </g>
   </g>
 </svg>
+</div>
 
 
 
