@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import STALogo from '../../assets/images/STARoboticsLogo.png';
 import { Twirl as Hamburger } from 'hamburger-react';
 import Socials from '../Socials/Socials';
+import './Navbar.css'
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,14 +20,11 @@ const Navbar: React.FC = () => {
     closeMenu();
   };
 
-  
-  console.log(`Classes: ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`);
-
   return (
     <nav className={`p-6 sticky z-10 top-0 backdrop-filter backdrop-blur-lg bg-opacity-20 firefox:bg-opacity-20`}>
       <div>
         {/* Logo and Team Name */}
-        <ul>
+        <ul className='mobile:hidden'>
         <li className='cursor-pointer'>
           <Link to="home" smooth={true} duration={500} offset={-500}>
             <img
@@ -90,8 +88,32 @@ const Navbar: React.FC = () => {
           </ul>
         </div>
 
+        <ul className='md:hidden flex justify-start'>
+        <li className='cursor-pointer'>
+          <Link to="home" smooth={false} duration={500} offset={-500}>
+            <img
+              src={STALogo}
+              alt='sta_logo'
+              style={{
+                width: '50px',
+                height: 'auto',
+                position: 'relative', 
+                left: '-12px'
+              }}
+            />
+          </Link>
+        </li>
+
+        <li
+          className='cursor-pointer font-Khula text-red-500 italic text-2xl mt-[9px] ml-[-11px]'
+        >
+          <Link to="home" smooth={false} duration={500} offset={-500}>
+            TEAM 30405
+          </Link>
+        </li>
+
         {/* Mobile Hamburger Button */} 
-        <div style={{position: 'relative', bottom:'6px'}} className='md:hidden flex justify-end z-10'>
+        <div style={{position: 'absolute', right:'10px'}} className='md:hidden flex justify-end z-10'>
           <Hamburger
             toggled={isOpen}
             toggle={toggleMenu}
@@ -99,6 +121,8 @@ const Navbar: React.FC = () => {
             color='#FF0000' // Customize the hamburger color
           />
         </div>
+        </ul>
+
       </div>
 
       
@@ -106,7 +130,7 @@ const Navbar: React.FC = () => {
       {/* Mobile Navigation Menu */}
       
         <div onClick={() => setIsOpen(!isOpen)} className={`mobile:left-0 transition-opacity mobile:top-0 bg-white fixed place-items-center h-[100vh] mobile:w-screen`} style={{opacity: (isOpen ? "100" : "0"), pointerEvents: (isOpen ? "auto" : "none")}}>
-          <ul className='text-center mt-[40%]'>
+          <ul className='text-center mt-[40%] tablet-nav'>
           <h3 className='font-Khula text-4xl text-red-500 font-bold flex justify-center'>Navigation</h3>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
               <Link to='vex' onClick={handleLinkClick} smooth={false} duration={400} offset={-100}>

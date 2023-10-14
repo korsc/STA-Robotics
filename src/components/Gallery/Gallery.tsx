@@ -37,14 +37,14 @@ const Gallery: React.FC = () => {
   }, []);
 
   return (
-    <section id='gallery' className='box-shadow-wrapper'>
+    <section id='gallery' className='box-shadow-wrapper pb-2'>
     <h3 className='flex justify-center pt-7 font-Khula text-transparent text-7xl bg-clip-text bg-gradient-to-r from-red-500 to-pink-600 relative mt-[3%]'>Gallery</h3>
     <div className="row-pg mb-[1%]">
       {/* COLUMN 1 */}
       <div className="column-pg">
         <img
           className="myImages mobile:mb-3 rounded-2xl"
-          src={Image1} // Replace with your image source
+          src={Image1} 
           style={{position:'relative'}}
         />
       </div>
@@ -53,7 +53,7 @@ const Gallery: React.FC = () => {
       <div className="column-pg">
       <img
           className="myImages mobile:mb-3 rounded-2xl"
-          src={Image2} // Replace with your image source
+          src={Image2} 
           style={{position:'relative'}}
         />
       </div>
@@ -62,7 +62,7 @@ const Gallery: React.FC = () => {
       <div className="column-pg">
       <img
           className="myImages mobile:mb-3 rounded-2xl"
-          src={Image3} // Replace with your image source
+          src={Image3} 
           style={{position:'relative'}}
         />
       </div>
@@ -71,7 +71,7 @@ const Gallery: React.FC = () => {
       <div className="column-pg">
       <img
           className="myImages mobile:mb-3 rounded-2xl"
-          src={Image4} // Replace with your image source
+          src={Image4} 
           style={{position:'relative'}}
         />
       </div>
