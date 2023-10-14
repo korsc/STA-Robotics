@@ -25,22 +25,22 @@ const Footer: React.FC = () => {
             <p className='text-md uppercase font-bold text-gray-500'>Site Navigation</p>
             
             <ul className='text-red-600'>
-              <li><Link to='vex' smooth={true} duration={500} offset={-100} className='hover:text-white font-bold cursor-pointer'>
+              <li><Link to='vex' smooth={false} duration={500} offset={-100} className='hover:text-white font-bold cursor-pointer'>
                 Vex
               </Link></li>
-              <li><Link to='about' smooth={true} duration={500} offset={-100} className='hover:text-white font-bold cursor-pointer'>
+              <li><Link to='about' smooth={false} duration={500} offset={-100} className='hover:text-white font-bold cursor-pointer'>
                 About
               </Link></li>
-              <li><Link to='teams' smooth={true} duration={500} offset={-100} className='hover:text-white font-bold cursor-pointer'>
+              <li><Link to='teams' smooth={false} duration={500} offset={-100} className='hover:text-white font-bold cursor-pointer'>
                 Teams
               </Link></li>
-              <li><Link to='gallery' smooth={true} duration={500} offset={-100} className='hover:text-white font-bold cursor-pointer'>
+              <li><Link to='gallery' smooth={false} duration={500} offset={-100} className='hover:text-white font-bold cursor-pointer'>
                 Gallery
               </Link></li>
-              <li><Link to='sponsors' smooth={true} duration={500} offset={-100}className='hover:text-white font-bold cursor-pointer'>
+              <li><Link to='sponsors' smooth={false} duration={500} offset={-100}className='hover:text-white font-bold cursor-pointer'>
                 Sponsors
               </Link></li>
-              <li><Link to='contact' smooth={true} duration={500} offset={-100} className='hover:text-white font-bold cursor-pointer'>
+              <li><Link to='contact' smooth={false} duration={500} offset={-100} className='hover:text-white font-bold cursor-pointer'>
                 Contact
               </Link></li>
 
