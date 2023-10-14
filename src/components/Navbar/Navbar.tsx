@@ -134,7 +134,7 @@ const Navbar: React.FC = () => {
               </Link>
             </li>
             <li className='block my-4 font-Nunito font-bold text-red-500 hover:text-gray-950'>
-              <Link to='contact' onClick={handleLinkClick} smooth={false} duration={400} offset={-50}>
+              <Link to='contact' onClick={handleLinkClick} smooth={false} duration={400} offset={-60}>
                 Contact
               </Link>
             </li>
