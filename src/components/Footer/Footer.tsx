@@ -12,8 +12,8 @@ const Footer: React.FC = () => {
           <div className='flex flex-col gap-2 w-full md:w-1/3'>
               <p className="text-sm uppercase text-gray-400 ">Copyright © STA Robotics 2023</p>
               <div className='flex ml-[-7px]'>
-              < img src={StaLogo} alt='STA Logo' className='w-10 h-10 mr-1'/>
-                    <h2 className='text-3xl font-Khula text-white mt-[-1]'>STA Robotics</h2>
+              < img src={StaLogo} alt='STA Logo' className='w-10 mr-1'/>
+                    <h2 className='text-3xl font-Khula text-white mt-[0.5%]'>STA Robotics</h2>
                 </div>
             <div className='text-white md:p-5 mobile:p-2 mobile:ml-3'>
                   <Socials/>
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
           <ul>
             <li> <a href='https://www.vexrobotics.com/competition' target='_blank' className='text-red-600 font-bold hover:text-white'>Vex Competition</a></li>
 
-            <li> <a href='https://www.vexrobotics.com/competition' target='_blank' className='text-red-600 font-bold hover:text-white'>Support Us</a></li>
+            {/* <li> <a href='https://www.vexrobotics.com/competition' target='_blank' className='text-red-600 font-bold hover:text-white'>Support Us</a></li> */}
 
          
           </ul>
