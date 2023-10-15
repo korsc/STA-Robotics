@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
               <p className="text-sm uppercase text-gray-400 ">Copyright © STA Robotics 2023</p>
               <div className='flex ml-[-7px]'>
               < img src={StaLogo} alt='STA Logo' className='w-10 mr-1'/>
-                    <h2 className='text-3xl font-Khula text-white mt-[0.5%]'>STA Robotics</h2>
+                    <h2 className='text-3xl font-Khula text-white mt-[0.8%]'>STA Robotics</h2>
                 </div>
             <div className='text-white md:p-5 mobile:p-2 mobile:ml-3'>
                   <Socials/>
