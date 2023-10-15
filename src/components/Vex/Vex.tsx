@@ -11,7 +11,7 @@ const About: React.FC = () => {
             What is Vex Robotics?
           </h3>
 
-          <p className='mt-4 font-Nunito mobile:text-sm leading-loose'> {/* ask if he wants mr-36 (margin right-36, show him how it looks and ask which is better)*/}
+          <p className='mt-4 font-Nunito leading-loose'> {/* ask if he wants mr-36 (margin right-36, show him how it looks and ask which is better)*/}
             VEX Robotics is educational robotics for everyone. VEX solutions
             span all levels of both formal and informal education with
             accessible, scalable, and affordable solutions. Beyond science and
@@ -21,7 +21,7 @@ const About: React.FC = () => {
             tomorrow!
           </p>
 
-          <p className='mt-4 font-Nunito text-left mobile:text-sm leading-loose'>
+          <p className='mt-4 font-Nunito text-left leading-loose'>
             <strong>Tournament Format:</strong> Teams compete in rounds of 2 vs 2 round robin
             competition where they are randomly paired with teams from across
             the competition. After this is complete, all teams are ranked and
