@@ -1,6 +1,11 @@
 @media (min-width: 821px) {
   @import url(https://fonts.googleapis.com/css?family=Khula:700);
 
+  .video-responsive iframe {
+    height: 100%;
+    width: 100%;
+  }
+
   .teams {
       justify-content: center; 
       max-width: 100%;
@@ -88,6 +93,11 @@
 
 @media (max-width: 767px){
   @import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+  .video-responsive iframe {
+    height: 100%;
+    width: 100%;
+  }
 
   .teams {
     justify-content: center; 

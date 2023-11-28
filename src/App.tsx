@@ -16,10 +16,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      
-      
       <CircuitAnimation />
-      
         <Home />
         
 
